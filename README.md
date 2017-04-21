@@ -16,7 +16,7 @@ Creates a modern Ubuntu 16.04 "Xenial" LTS build from the Linode image, intended
  - Creates a normal (unprivileged) user account.
    * Allows configuration of user groups.
    * Allows configuration of GECOS field.
- - Imports SSH keys.
+ - Imports SSH keys from Launchpad.
  - Enables the firewall.
    * Enables `ufw`.
    * Optionally limits incoming SSH connections.
