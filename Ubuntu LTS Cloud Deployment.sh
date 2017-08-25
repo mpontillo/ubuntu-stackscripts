@@ -47,7 +47,7 @@
 # <UDF name="gecos" default="" label="GECOS" example="GECOS field. Example: John Doe,,+1555-555-1212" />
 # <UDF name="groups" default="adm,dialout,cdrom,floppy,sudo,audio,dip,video,plugdev,netdev" label="User groups" example="Comma-separated list of groups for the new user. Example: adm,sudo" />
 # <UDF name="launchpad_account" default="" label="Launchpad account" example="Will be used to import SSH keys. If SSH keys are imported, root password will be disabled." />
-# <UDF name="extra_packages" default="" label="Extra packages" example="Whitespace-separated list of extra packages to install. Example: build-essential git" />
+# <UDF name="extra_packages" default="software-properties-common" label="Extra packages" example="Whitespace-separated list of extra packages to install. Example: build-essential git" />
 # <UDF name="kernel_package" default="linux-generic-hwe-16.04" label="Kernel package to install" example="linux-image-virtual" />
 # <UDF name="reboot" default="true" label="Reboot" example="Note: This is helpful to ensure the installed kernel boots with GRUB 2." oneof="true,false" />
 # <UDF name="zfs" default="true" label="ZFS" example="If true, installs ZFS packages." oneof="true,false" />
@@ -88,7 +88,7 @@ LAUNCHPAD_ACCOUNT="${LAUNCHPAD_ACCOUNT}"
 KERNEL_PACKAGE="${KERNEL_PACKAGE:-linux-generic-hwe-16.04}"
 REBOOT="${REBOOT:-true}"
 ZFS="${ZFS:-true}"
-EXTRA_PACKAGES="${EXTRA_PACKAGES:-}"
+EXTRA_PACKAGES="${EXTRA_PACKAGES:-software-properties-common}"
 USERNAME="${USERNAME:-ubuntu}"
 CUSTOMIZE_ETC_ISSUE="${CUSTOMIZE_ETC_ISSUE:-true}"
 CONFIGURE_FIREWALL="${CONFIGURE_FIREWALL:-true}"
